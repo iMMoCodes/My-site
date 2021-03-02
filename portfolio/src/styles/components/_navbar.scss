@@ -1,0 +1,61 @@
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  background: rgba(17, 17, 17,0.7);
+  width: 100vw;
+  height: 7vh;
+
+  .logo-container {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .github-icon {
+    color: black;
+    background: $off-purple;
+    font-size: 2.5rem;
+    box-shadow: $box-shadow-purple;
+    border-radius: 999px;
+    margin-top: 8px;
+  }
+
+  .github-icon:hover {
+    background: darken($off-purple, 10%);
+  }
+
+  h1 {
+    color: black;
+    font-size: 1.7rem;
+    margin-top: -12px;
+    text-shadow: $text-shadow-purple;
+    pointer-events: none;
+  }
+
+  .nav-list-container {
+    flex: 4;
+    margin: auto 0;
+  }
+
+  ul {
+    font-size: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: $text-shadow-purple;
+  }
+
+  li {
+    display: flex;
+    cursor: pointer;
+  }
+
+  li:hover {
+    border-bottom: 3px solid darken($off-purple, 20%);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+}

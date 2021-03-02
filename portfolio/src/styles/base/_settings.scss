@@ -1,0 +1,16 @@
+// Colors
+$off-black: rgb(17, 17, 17);
+$off-green: #14A76C;
+$off-purple: #230c69;
+
+// Shadows
+$text-shadow-green: 1px 1px 5px $off-green, -1px -1px 5px $off-green;
+$box-shadow-green: 1px 1px 4px $off-green, -1px -1px 4px $off-green;
+$text-shadow-purple: 1px 1px 10px $off-purple, -1px -1px 10px $off-purple;
+$box-shadow-purple: 1px 1px 4px $off-purple, -1px -1px 4px $off-purple;
+
+// Breakpoints
+$lg-breakpoint: 1024px;
+$md-breakpoint: 768px;
+$sm-breakpoint: 641px;
+$xs-breakpoint: 480px;
