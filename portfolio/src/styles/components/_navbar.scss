@@ -2,8 +2,8 @@ nav {
   position: sticky;
   top: 0;
   display: flex;
-  background: rgba(17, 17, 17,0.7);
-  width: 100vw;
+  background: $off-black;
+  width: 100%;
   height: 7vh;
 
   .logo-container {
@@ -17,7 +17,7 @@ nav {
   .github-icon {
     color: black;
     background: $off-purple;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     box-shadow: $box-shadow-purple;
     border-radius: 999px;
     margin-top: 8px;
@@ -29,7 +29,7 @@ nav {
 
   h1 {
     color: black;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: -12px;
     text-shadow: $text-shadow-purple;
     pointer-events: none;
@@ -53,9 +53,14 @@ nav {
     cursor: pointer;
   }
 
-  li:hover {
+  a:hover {
     border-bottom: 3px solid darken($off-purple, 20%);
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
