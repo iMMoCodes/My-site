@@ -18,18 +18,18 @@ nav {
 
   .github-icon {
     color: $off-purple;
-    font-size: 2rem;
+    font-size: $md-size;
   }
 
   h1 {
-    color: black;
-    font-size: 1.3rem;
+    color: $nav-black;
+    font-size: $xs-size;
     text-shadow: $text-shadow-purple;
     pointer-events: none;
   }
 
   ul {
-    font-size: 2rem;
+    font-size: $md-size;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -44,7 +44,7 @@ nav {
 
   a {
     text-decoration: none;
-    color: black;
+    color: $nav-black;
   }
 
   .nav-button {
@@ -55,10 +55,10 @@ nav {
   // 1024px
   @media screen and (max-width: $lg-breakpoint) {
     .github-icon {
-      font-size: 1.8rem;
+      font-size: $sm-size;
     }
     h1 {
-      font-size: 1.3rem;
+      font-size: $xs-size;
     }
   }
   // 768px
@@ -67,8 +67,10 @@ nav {
       display: none;
     }
     .nav-button {
-      font-size: 3rem;
+      font-size: $lg-size;
       display: block;
+      color: $off-purple;
+      text-shadow: 10px 10px 10px red;
       margin: auto 50px auto auto;
     }
   }
