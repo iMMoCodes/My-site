@@ -3,15 +3,15 @@ nav {
   top: 0;
   display: flex;
   background: $off-black;
-  width: 100%;
-  height: 7vh;
+  width: 100vw;
+  height: 70px;
 
   .logo-container {
-    margin-left: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 40px;
   }
 
   .github-icon {
@@ -30,39 +30,58 @@ nav {
   h1 {
     color: black;
     font-size: 1.5rem;
-    margin-top: -12px;
+    margin-top: -10px;
     text-shadow: $text-shadow-purple;
     pointer-events: none;
   }
 
-  .nav-list-container {
-    flex: 4;
-    margin: auto 0;
-  }
-
   ul {
     font-size: 2rem;
-    list-style: none;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-shadow: $text-shadow-purple;
+    flex: auto;
+    list-style: none;
   }
 
   li {
-    display: flex;
     cursor: pointer;
-  }
-
-  a:hover {
-    border-bottom: 3px solid darken($off-purple, 20%);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
   }
 
   a {
     text-decoration: none;
     color: black;
   }
-}
 
-// Media
+  a:hover {
+    border-bottom: 4px solid darken($off-purple, 10%);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .nav-button {
+    display: none;
+  }
+
+  // Media
+  // 1024px
+  @media screen and (max-width: $lg-breakpoint) {
+    .github-icon {
+      font-size: 1.8rem;
+    }
+    h1 {
+      font-size: 1.3rem;
+    }
+  }
+  // 768px
+  @media screen and (max-width: $md-breakpoint) {
+    ul {
+      display: none;
+    }
+    .nav-button {
+      font-size: 3rem;
+      display: block;
+      margin: auto 20px auto auto;
+    }
+  }
+}
