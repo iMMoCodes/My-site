@@ -1,12 +1,11 @@
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   background: $off-black;
   width: 100vw;
   height: 70px;
   z-index: 999;
-  overflow: hidden;
 
   .logo-container {
     display: flex;
