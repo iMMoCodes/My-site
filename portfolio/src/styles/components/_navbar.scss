@@ -5,6 +5,7 @@ nav {
   background: $off-black;
   width: 100vw;
   height: 70px;
+  z-index: 999;
 
   .logo-container {
     display: flex;
@@ -81,7 +82,7 @@ nav {
     .nav-button {
       font-size: 3rem;
       display: block;
-      margin: auto 20px auto auto;
+      margin: auto 50px auto auto;
     }
   }
 }

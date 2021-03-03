@@ -27,7 +27,7 @@
 
   .about-area {
     display: flex;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
   }
 
@@ -54,23 +54,56 @@
       color: $off-white;
       font-size: 1.8rem;
     }
+
+    // Personal & Summary
+    
+      .personal-area,
+      .summary-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+      }
+    
+    .about-text,
+    .summary-text {
+      font-size: 1.8rem;
+      color: $off-grey;
+      margin: 10px auto;
+      text-align: center;
+    }
+    // Media
+    // 1024px
+    @media screen and (max-width: $lg-breakpoint) {
+      .about-area {
+        width: 90%;
+      }
+      .personal-area,
+      .summary-area {
+        width: 90%;
+      }
+      h1 {
+        font-size: 4rem;
+      }
+      .white-line {
+        width: 90%;
+      }
+    }
+    // 641px
+    @media screen and (max-width: $sm-breakpoint) {
+      .about-left h2,
+      .about-middle h2,
+      .about-right h2 {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      .about-text,
+      .summary-text {
+      font-size: 1rem;
+    }
+    }
 }
 
-// Personal & Summary
-
-  .personal-area,
-  .summary-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 40%;
-    margin: 0 auto;
-  }
-
-.about-text,
-.summary-text {
-  font-size: 1.8rem;
-  color: $off-grey;
-  margin: 10px auto;
-  text-align: center;
-}
