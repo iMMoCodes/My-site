@@ -17,7 +17,7 @@ const Home = () => {
                <h1>Matti Mäkelä</h1>
                <h2>Web Developer</h2>
             </div>
-            <div className="hand-icon-container">
+            <div>
                <a href="#about"><FontAwesomeIcon className="hand-icon" icon={faHandPointDown} /></a>
             </div>
          </section>

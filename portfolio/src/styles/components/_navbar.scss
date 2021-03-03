@@ -6,32 +6,25 @@ nav {
   width: 100vw;
   height: 70px;
   z-index: 999;
+  overflow: hidden;
 
   .logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
     margin-left: 40px;
   }
 
   .github-icon {
-    color: black;
-    background: $off-purple;
+    color: $off-purple;
     font-size: 2.2rem;
-    box-shadow: $box-shadow-purple;
-    border-radius: 999px;
-    margin-top: 8px;
-  }
-
-  .github-icon:hover {
-    background: darken($off-purple, 10%);
   }
 
   h1 {
     color: black;
     font-size: 1.5rem;
-    margin-top: -10px;
     text-shadow: $text-shadow-purple;
     pointer-events: none;
   }
@@ -55,11 +48,6 @@ nav {
     color: black;
   }
 
-  a:hover {
-    border-bottom: 4px solid darken($off-purple, 10%);
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-  }
   .nav-button {
     display: none;
   }
