@@ -13,7 +13,7 @@ const Home = () => {
             <video autoPlay poster={backgroundPoster} loop muted className="video-bg">
                {/* <source src={backgroundVideo} type="video/mp4" /> */}
             </video>
-            <div classname="my-info">
+            <div className="my-info">
                <h1>Matti Mäkelä</h1>
                <h2>Web Developer</h2>
             </div>

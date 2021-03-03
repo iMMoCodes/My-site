@@ -36,7 +36,7 @@ const About = () => {
             </div>
             <div className="white-line"></div>
          </section>
-         <section class="my-skills-container">
+         <section className="my-skills-container">
             {/* Languages */}
             <h1>Languages</h1>
             <div className="about-area">
