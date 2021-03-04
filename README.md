@@ -1,1 +1,3 @@
-# My-site
+# My improved portfolio
+
+# Not fully ready yet
