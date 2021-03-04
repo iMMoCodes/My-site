@@ -68,7 +68,7 @@ const About = () => {
             {/* Personal */}
             <h1>Personal</h1>
             <div className="personal-area">
-               <p className="about-text">28 years old.</p>
+               <p className="about-text">I'm 28 years old.</p>
                <p className="about-text">I love music, sports, games and challenges.</p>
                <p className="about-text">My native language is Finnish.</p>
                <p className="about-text">I'm really competitive person and constantly try to improve myself in everything I do. That said I'm still always positive, friendly and I don't take things too seriously.</p>

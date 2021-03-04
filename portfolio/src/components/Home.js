@@ -6,6 +6,7 @@ import backgroundPoster from "../assets/img/poster.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHandPointDown } from '@fortawesome/free-regular-svg-icons';
 
+
 const Home = () => {
    return (
       <main className="home" id="home">

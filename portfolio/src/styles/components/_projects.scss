@@ -1,10 +1,139 @@
 .projects {
    width: 100vw;
    height: 100vh;
-   background: red;
+   background: $off-black;
 
    h1 {
+      font-size: $xxl-size;
+      color: $off-white;
+      text-shadow: $text-shadow-purple;
+      text-transform: uppercase;
       margin-top: 7vh;
       text-align: center;
+   }
+
+   .project-container {
+      display: flex;
+      width: 80%;
+      margin: 100px auto;
+   }
+
+   .project-text-area {
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      padding: 50px;
+
+      h2 {
+         font-size: $lg-size;
+         text-align: center;
+         text-transform: uppercase;
+         color: $off-white;
+         text-shadow: $text-shadow-purple;
+      }
+
+      h3 {
+         font-size: $sm-size;
+         text-align: center;
+         color: $off-grey;
+         margin: 0 auto 10px auto;
+      }
+   }
+
+   .project-info {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+   }
+
+   .project-learned {
+      flex: 3;
+      margin-right: 20px;
+
+      h3 {
+         color: $off-white;
+         text-shadow: $text-shadow-purple;
+         font-size: $md-size;
+      }
+
+      p {
+         color: $off-grey;
+         font-size: $s-size;
+         text-align: center;
+         margin: 10px auto;
+      }
+   }
+
+   .project-stack {
+      flex: 1;
+
+      h3 {
+         color: $off-white;
+         text-shadow: $text-shadow-purple;
+         font-size: $md-size;
+      }
+
+      ul {
+         display: flex;
+         justify-content: space-around;
+         margin: 20px auto;
+         font-size: $xl-size;
+         text-align: center;
+      }
+   }
+
+   .project-buttons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px auto;
+      width: 90%;
+
+      a {
+         padding: 12px 36px;
+         margin: 10px 0;
+         color: $off-white;
+         text-shadow: $text-shadow-purple;
+         text-decoration: none;
+         text-transform: uppercase;
+         font-size: $md-size;
+         border-radius: 40px;
+         background: linear-gradient(90deg,#3609bd,#3a2088);
+         overflow: hidden;
+      }
+      a:hover {
+         transform: scale(1.1);
+      }
+   }
+
+   .project-img-area {
+      display: flex;
+      width: 30%;
+   }
+
+   .project-choice {
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+
+      button {
+      padding: 12px 36px;
+      margin: 10px 0;
+      color: $off-white;
+      text-shadow: $text-shadow-purple;
+      text-transform: uppercase;
+      font-size: $md-size;
+      border-radius: 40px;
+      background: linear-gradient(90deg,#3609bd,#3a2088);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      }
+
+      button:hover {
+         transform: scale(1.1);
+      }
    }
 }
