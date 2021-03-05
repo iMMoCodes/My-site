@@ -181,6 +181,9 @@
    .welcome-one span {
       font-size: 6rem;
    }
+   .welcome-two span {
+      font-size: 2rem;
+   }
 }
 
 // 560
@@ -193,10 +196,13 @@
    }
 }
 
-// 480
-@media screen and (max-width: 500) {
+// Phone
+@media screen and (max-width: 600px) {
    .welcome-one span {
       font-size: 3rem;
+   }
+   .welcome-two span {
+      font-size: 1.5rem;
    }
 }
 
