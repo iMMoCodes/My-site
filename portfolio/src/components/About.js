@@ -79,7 +79,7 @@ const About = () => {
          <section className="my-summary-container">
             <h1>Why Coding?</h1>
             <div className="summary-area">
-               <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are big reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood what things did so that I could apply them in my own code in the future.</p>
+               <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are big reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood what things did so that I could apply them in my own projects in the future.</p>
             </div>
             <div className="white-line"></div>
          </section>
