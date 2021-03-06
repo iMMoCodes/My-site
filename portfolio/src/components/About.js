@@ -5,6 +5,8 @@ import { faHeart, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
 import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
 import { faBookReader } from '@fortawesome/free-solid-svg-icons';
 
+import Joke from "../helpers/Joke";
+
 const About = () => {
    return (
       <main className="about" id="about">
@@ -69,17 +71,18 @@ const About = () => {
             <h1>Personal</h1>
             <div className="personal-area">
                <p className="about-text">I'm 28 years old.</p>
-               <p className="about-text">I love music, sports, games and challenges.</p>
                <p className="about-text">My native language is Finnish.</p>
-               <p className="about-text">I'm really competitive person and constantly try to improve myself in everything I do. That said I'm still always friendly, positive and don't take things too seriously.</p>
+               <p className="about-text">I love music, sports, games and challenges.</p>
                <p className="about-text">I have good communication skills and I work well by myself but also as a member of a team. As an example of good team working skills I have won four Finnish championship medals in team sport.</p>
+               <p className="about-text">I'm really competitive person and constantly try to improve myself in everything I do. That said I'm still always friendly, positive and don't take things too seriously.</p>
+               <Joke />
             </div>
             <div className="white-line"></div>
          </section>
          <section className="my-summary-container">
             <h1>Why Coding?</h1>
             <div className="summary-area">
-               <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are big reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood what things did so that I could apply them in my own projects in the future.</p>
+               <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are big reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood how code snippets affected the code so I could implement them in my own projects in the future.</p>
             </div>
             <div className="white-line"></div>
          </section>

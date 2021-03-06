@@ -1,0 +1,36 @@
+.joke {
+  width: 100%;
+
+  p {
+    font-size: $sm-size;
+    color: $off-grey;
+    text-shadow: $text-shadow-purple;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .joke-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 90%;
+      padding: 12px 36px;
+      margin: 10px auto;
+      color: $off-white;
+      text-shadow: $text-shadow-purple;
+      text-transform: uppercase;
+      font-size: $md-size;
+      border-radius: 40px;
+      background: linear-gradient(90deg, #3609bd, #3a2088);
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+  }
+}

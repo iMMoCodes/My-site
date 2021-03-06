@@ -3,7 +3,9 @@
 
 @import './base/settings';
 @import './base/base';
-@import "./components/navbar";
-@import "./components/welcome";
-@import "./components/about";
-@import "./components/projects";
+@import './components/navbar';
+@import './components/welcome';
+@import './components/about';
+@import './helpers/joke';
+@import './components/projects';
+@import './components/contact';
