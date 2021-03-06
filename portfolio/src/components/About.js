@@ -71,7 +71,7 @@ const About = () => {
                <p className="about-text">I'm 28 years old.</p>
                <p className="about-text">I love music, sports, games and challenges.</p>
                <p className="about-text">My native language is Finnish.</p>
-               <p className="about-text">I'm really competitive person and constantly try to improve myself in everything I do. That said I'm still always positive, friendly and I don't take things too seriously.</p>
+               <p className="about-text">I'm really competitive person and constantly try to improve myself in everything I do. That said I'm still always friendly, positive and don't take things too seriously.</p>
                <p className="about-text">I have good communication skills and I work well by myself but also as a member of a team. As an example of good team working skills I have won four Finnish championship medals in team sport.</p>
             </div>
             <div className="white-line"></div>
