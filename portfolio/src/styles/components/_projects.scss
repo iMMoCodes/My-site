@@ -1,6 +1,5 @@
 .projects {
    width: 100vw;
-   height: 100vh;
    background: $off-black;
 
    h1 {
@@ -109,12 +108,14 @@
    .project-img-area {
       display: flex;
       width: 30%;
+      border-radius: 30px;
    }
 
    .project-choice {
       display: flex;
       justify-content: space-around;
-      width: 50%;
+      align-items: center;
+      width: 70%;
       margin: 0 auto;
       padding: 20px;
 
@@ -134,6 +135,111 @@
 
       button:hover {
          transform: scale(1.1);
+      }
+   }
+
+   // Media
+   // 1540px
+   @media screen and (max-width: 1540px) {
+      .project-stack ul {
+         flex-direction: column;
+      }
+   }
+   // 1440px
+   @media screen and (max-width: 1440px) {
+      .project-choice button {
+         font-size: $sm-size;
+      }
+   }
+   // 1330px
+   @media screen and (max-width: 1330px) {
+      .project-choice button {
+         font-size: $s-size;
+      }
+   }
+   // 1180px
+   @media screen and (max-width: 1180px) {
+      .project-choice button {
+         font-size: $xs-size;
+      }
+      .project-img-area {
+         display: none;
+      }
+      .project-img-area img {
+         display: none;
+      }
+      .project-text-area {
+         width: 100%;
+      }
+   }
+   // 1070
+   @media screen and (max-width: 1070px) {
+      .project-choice button {
+         font-size: 1.2rem;
+      }
+   }
+   // 1024
+   @media screen and (max-width: $lg-breakpoint) {
+      .project-choice {
+         width: 90%;
+      }
+      .project-choice button {
+         font-size: $s-size;
+      }
+      h1 {
+         font-size: $xl-size;
+      }
+      .project-text-area h2 {
+         font-size: 2.5rem;
+      }
+      .project-text-area h3 {
+         font-size: $s-size;
+      }
+      .project-learned h3,
+      .project-stack h3{
+         font-size: $sm-size;
+      }
+   }
+   // 930
+   @media screen and (max-width: 930px) {
+      .project-choice button {
+         font-size: 1.2rem;
+      }
+      .project-buttons a {
+         font-size: $sm-size;
+      }
+   }
+   // 768
+   @media screen and (max-width: $md-breakpoint) {
+      .project-choice {
+         flex-direction: column; 
+      }
+      .project-choice button {
+         font-size: 2rem;
+      }
+      .project-choice button:nth-child(3) {
+         padding: 12px 71px;
+      }
+      .project-buttons a {
+         font-size: $xs-size;
+      }
+      .project-info {
+         flex-direction: column;
+      }
+      .project-stack ul {
+         flex-direction: row;
+      }
+   }
+   // 641
+   @media screen and (max-width: $sm-breakpoint) {
+      .project-buttons {
+         flex-direction: column;
+      }
+      .project-buttons a:first-child {
+         padding:12px 45.5px;
+      }
+      .project-learned p {
+         font-size: $xs-size;
       }
    }
 }

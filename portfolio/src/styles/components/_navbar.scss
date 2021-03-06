@@ -2,7 +2,7 @@ nav {
   position: fixed;
   top: 0;
   display: flex;
-  background: $off-black;
+  background: rgba(0, 0, 0, 0.3);
   width: 100vw;
   height: 70px;
   z-index: 999;
@@ -17,15 +17,14 @@ nav {
   }
 
   .github-icon {
-    color: $off-purple;
+    color: linear-gradient(90deg,#3609bd,#3a2088);
     font-size: $md-size;
   }
 
   h1 {
-    color: $nav-black;
+    color: $off-white;
     font-size: $xs-size;
     text-shadow: $text-shadow-purple;
-    pointer-events: none;
   }
 
   ul {
@@ -44,7 +43,7 @@ nav {
 
   a {
     text-decoration: none;
-    color: $nav-black;
+    color: $off-white
   }
 
   .nav-button {

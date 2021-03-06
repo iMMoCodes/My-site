@@ -55,7 +55,7 @@ const Projects = () => {
    return (
       <main className="projects" id="projects">
          <h1>Projects</h1>
-         <div class="project-choice">
+         <div className="project-choice">
             <button onClick={handleProjectOne}>{titleOne}</button>
             <button onClick={handleProjectTwo}>{titleTwo}</button>
             <button onClick={handleProjectThree}>{titleThree}</button>
@@ -79,7 +79,7 @@ const Projects = () => {
                      </div>
                </div>
                <div className="project-buttons">
-                  <a target="_blank" href={liveLink}>Live</a>
+                  <a target="_blank" href={liveLink}>View Live</a>
                   <a target="_blank" href={gitHubLink}>View Code</a>
                </div>
             </div>

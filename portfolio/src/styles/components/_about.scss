@@ -2,6 +2,7 @@
   width: 100vw;
   background: $off-black;
   padding: 70px;
+  overflow: hidden;
 
   // About
 
@@ -77,11 +78,11 @@
     // 1024px
     @media screen and (max-width: $lg-breakpoint) {
       .about-area {
-        width: 90%;
+        width: 95%;
       }
       .personal-area,
       .summary-area {
-        width: 90%;
+        width: 95%;
       }
       h1 {
         font-size: $xl-size;
@@ -102,7 +103,7 @@
       }
       .about-text,
       .summary-text {
-      font-size: $xxs-size;
+      font-size: $xs-size;
     }
     }
     // 480px
