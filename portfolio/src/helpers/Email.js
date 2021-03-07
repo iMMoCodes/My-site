@@ -42,7 +42,7 @@ export default class MyForm extends React.Component {
                   </label>
                </div>
         {status === "SUCCESS" ? <p>Thanks! <FontAwesomeIcon icon={faSmileBeam}/></p> : <button>Send</button>}
-        {status === "ERROR" && <p>Ooops! There was an error <FontAwesomeIcon icon={faFrown}/></p>}
+        {status === "ERROR" && <p>Ooops! There was an error <FontAwesomeIcon icon={faFrown}/> <br/> Check that your email is valid</p>}
       </form>
     );
   }

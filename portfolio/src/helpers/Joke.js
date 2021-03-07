@@ -5,14 +5,14 @@ import { faSmileBeam } from '@fortawesome/free-regular-svg-icons';
 
 const Joke = () => {
    // States
-   const [questionText,setQuestionText] = useState("Click to fetch a joke to brighten your day");
+   const [questionText,setQuestionText] = useState("Click to get a joke to brighten your day");
    const [progJoke,setProgJoke] = useState("");
    const [jokePartOne,setJokePartOne] = useState("");
    const [jokePartTwo,setJokePartTwo] = useState("");
    // Handle Click
    const handleJoke = () => {
       getJoke();
-      setQuestionText("Get me another one !");
+      setQuestionText("Get me an another one !");
    }
    // Fetch Joke
    const getJoke = async () => {

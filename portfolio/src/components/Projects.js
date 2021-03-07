@@ -9,7 +9,7 @@ import { info } from "../constants/project-info";
 
 const Projects = () => {
 
-   const {titleOne,titleTwo,titleThree,descOne,descTwo,descThree,liveLinkOne,liveLinkTwo,liveLinkThree,gitHubOne,gitHubTwo,gitHubThree,html,css,js,react} = info;
+   const {titleOne,titleTwo,titleThree,descOne,descTwo,descThree,liveLinkOne,liveLinkTwo,liveLinkThree,gitHubOne,gitHubTwo,gitHubThree,html,css,js,react, projectOneLearnings, projectTwoLearnings, projectThreeLearnings} = info;
 
    // States
    const [title, setTitle] = useState(titleOne);
@@ -20,6 +20,7 @@ const Projects = () => {
    const [projectImg, setProjectImg] = useState(recipeImage);
    const [liveLink, setLiveLink] = useState(liveLinkOne);
    const [gitHubLink, setGitHubLink] = useState(gitHubOne);
+   const [projectLearn, setProjectLearn] = useState(projectOneLearnings);
 
    // Handle Button Clicks
    const handleProjectOne = () => {
@@ -31,6 +32,7 @@ const Projects = () => {
       setProjectImg(recipeImage);
       setLiveLink(liveLinkOne);
       setGitHubLink(gitHubOne);
+      setProjectLearn(projectOneLearnings);
    }
    // Handle Button Clicks
    const handleProjectTwo = () => {
@@ -42,6 +44,7 @@ const Projects = () => {
       setProjectImg(shoppingImage);
       setLiveLink(liveLinkTwo);
       setGitHubLink(gitHubTwo);
+      setProjectLearn(projectTwoLearnings);
    }
    // Handle Button Clicks
    const handleProjectThree = () => {
@@ -53,6 +56,7 @@ const Projects = () => {
       setProjectImg(ticTacToeImage);
       setLiveLink(liveLinkThree);
       setGitHubLink(gitHubThree);
+      setProjectLearn(projectThreeLearnings);
    }
 
    return (
@@ -71,8 +75,16 @@ const Projects = () => {
                <h3>{description}</h3>
                <div className="project-info">
                   <div className="project-learned">
-                     <h3>What I learned</h3>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem provident cumque assumenda sit consequatur eligendi modi architecto iste quidem eum ab nostrum dolore asperiores, fugit quam, inventore quibusdam soluta nulla?</p>
+                     <h3>What I learned from this project</h3>
+                     <ul>
+                        <li>{projectLearn.first}</li>
+                        <li>{projectLearn.second}</li>
+                        <li>{projectLearn.third}</li>
+                        <li>{projectLearn.fourth}</li>
+                        <li>{projectLearn.fifth}</li>
+                        <li>{projectLearn.sixth}</li>
+                        <li>{projectLearn.seventh}</li>
+                     </ul>
                   </div>
                   {/* Project Stack */}
                      <div className="project-stack">
