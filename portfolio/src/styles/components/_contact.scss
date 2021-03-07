@@ -1,5 +1,227 @@
 .contact {
   width: 100vw;
-  height: 100vh;
-  background: grey;
+  background: $off-black;
+  overflow: hidden;
+
+  h1 {
+    font-size: $xxl-size;
+    color: $off-white;
+    text-shadow: $text-shadow-purple;
+    text-transform: uppercase;
+    margin-top: 7vh;
+    text-align: center;
+  }
+
+  .form-container {
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .form {
+    width: 25vw;
+    position: relative;
+    height: 90px;
+    border-radius: 20px;
+    margin: 20px 0;
+  }
+
+  .form input {
+    width: 100%;
+    height: 100%;
+    color: $off-purple;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    border: none;
+    outline: none;
+    font-size: $md-size;
+    background: $off-white;
+  }
+
+  .form label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .form label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 5px solid $off-purple;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .contact-span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.3s ease;
+    font-size: $s-size;
+  }
+
+  .form input:focus + .contact-label .contact-span,
+  .form input:valid + .contact-label .contact-span {
+    transform: translateY(-140%);
+    color: $off-purple;
+  }
+
+  .form input:focus + .contact-label::after,
+  .form input:valid + .contact-label::after {
+    transform: translateX(0%);
+  }
+
+  // Message
+    .form-message {
+    width: 25vw;
+    position: relative;
+    border-radius: 20px;
+  }
+
+  .form-message textarea {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    min-width: 25vw;
+    max-width: 25vw;
+    margin: 0 auto;
+    color: $off-purple;
+    padding: 50px 5px;
+    border: none;
+    outline: none;
+    font-size: $md-size;
+    background: $off-white;
+  }
+
+  .form-message label {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    min-height: 250px;
+    min-width: 25vw;
+    max-width: 25vw;
+    pointer-events: none;
+  }
+
+  .form-message label::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 5px solid $off-purple;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .contact-message-span {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.3s ease;
+    font-size: $s-size;
+  }
+
+
+  .form-message textarea:focus + .contact-message .contact-message-span,
+  .form-message textarea:valid + .contact-message .contact-message-span {
+    transform: translateY(-600%);
+    color: $off-purple;
+  }
+
+  .form-message textarea:focus + .contact-message::after,
+  .form-message textarea:valid + .contact-message::after {
+    transform: translateX(0%);
+  }
+
+  // Button
+  button {
+      padding: 12px 36px;
+      margin: 10px 0;
+      color: $off-white;
+      text-shadow: $text-shadow-purple;
+      text-transform: uppercase;
+      font-size: $md-size;
+      border-radius: 40px;
+      background: linear-gradient(90deg,#3609bd,#3a2088);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      overflow-y: hidden;
+  }
+
+  button:hover {
+         transform: scale(1.1);
+      }
+
+  // Media
+  // 1380px
+  @media screen and (max-width: 1380px) {
+    .form,
+    .form-message,
+    .form-message textarea {
+      width: 40vw;
+      max-width: 40vw;
+      min-width: 40vw;
+    }
+  }
+
+  // 1024
+  @media screen and (max-width: $lg-breakpoint) {
+    .form,
+    .form-message,
+    .form-message textarea {
+      width: 50vw;
+      max-width: 50vw;
+      min-width: 50vw;
+    }
+  }
+
+  // 768px
+  @media screen and (max-width: $md-breakpoint) {
+    .form,
+    .form-message,
+    .form-message textarea {
+      width: 60vw;
+      max-width: 60vw;
+      min-width: 60vw;
+    }
+  }
+
+  // 641px
+  @media screen and (max-width: $sm-breakpoint) {
+    .form,
+    .form-message,
+    .form-message textarea {
+      width: 65vw;
+      max-width: 65vw;
+      min-width: 65vw;
+    }
+  }
+
+  // 480px
+  @media screen and (max-width: $xs-breakpoint) {
+    .form,
+    .form-message,
+    .form-message textarea {
+      width: 90vw;
+      max-width: 90vw;
+      min-width: 90vw;
+    }
+  }
 }
