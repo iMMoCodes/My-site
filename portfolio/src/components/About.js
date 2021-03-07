@@ -80,6 +80,7 @@ const About = () => {
             <div className="white-line"></div>
          </section>
          <section className="my-summary-container">
+            {/* Summary */}
             <h1>Why Coding?</h1>
             <div className="summary-area">
                <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are big reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood how code snippets affected the code so I could implement them in my own projects in the future.</p>

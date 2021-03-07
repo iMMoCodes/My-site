@@ -19,16 +19,19 @@ const Navbar = () => {
    return (
       <>
       <nav>
+         {/* Logo */}
          <div className="logo-container">
             <a target="_blank" rel="github-link" href="https://github.com/iMMoCodes"><FontAwesomeIcon className="github-icon" icon={ faGithub }/></a>
             <h1>Github</h1>
          </div>
+         {/* Nav */}
          <ul>
             <li><a href="#welcome">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
          </ul>
+         {/* Nav Button */}
          <FontAwesomeIcon className="nav-button" onClick={handleMenu} icon={faBars} />
       </nav>
       <div className="nav-button-container">

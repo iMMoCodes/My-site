@@ -11,6 +11,7 @@ const Projects = () => {
 
    const {titleOne,titleTwo,titleThree,descOne,descTwo,descThree,liveLinkOne,liveLinkTwo,liveLinkThree,gitHubOne,gitHubTwo,gitHubThree,html,css,js,react} = info;
 
+   // States
    const [title, setTitle] = useState(titleOne);
    const [description, setDescription] = useState(descOne);
    const [stackOne, setStackOne] = useState(react);
@@ -20,6 +21,7 @@ const Projects = () => {
    const [liveLink, setLiveLink] = useState(liveLinkOne);
    const [gitHubLink, setGitHubLink] = useState(gitHubOne);
 
+   // Handle Button Clicks
    const handleProjectOne = () => {
       setTitle(titleOne);
       setDescription(descOne);
@@ -30,7 +32,7 @@ const Projects = () => {
       setLiveLink(liveLinkOne);
       setGitHubLink(gitHubOne);
    }
-
+   // Handle Button Clicks
    const handleProjectTwo = () => {
       setTitle(titleTwo);
       setDescription(descTwo);
@@ -41,6 +43,7 @@ const Projects = () => {
       setLiveLink(liveLinkTwo);
       setGitHubLink(gitHubTwo);
    }
+   // Handle Button Clicks
    const handleProjectThree = () => {
       setTitle(titleThree);
       setDescription(descThree);
@@ -56,12 +59,14 @@ const Projects = () => {
       <main className="projects" id="projects">
          <h1>Projects</h1>
          <div className="project-choice">
+            {/* Project Choosing Buttons */}
             <button onClick={handleProjectOne}>{titleOne}</button>
             <button onClick={handleProjectTwo}>{titleTwo}</button>
             <button onClick={handleProjectThree}>{titleThree}</button>
          </div>
          <section className="project-container">
             <div className="project-text-area">
+               {/* Project Info */}
                <h2>{title}</h2>
                <h3>{description}</h3>
                <div className="project-info">
@@ -69,6 +74,7 @@ const Projects = () => {
                      <h3>What I learned</h3>
                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem provident cumque assumenda sit consequatur eligendi modi architecto iste quidem eum ab nostrum dolore asperiores, fugit quam, inventore quibusdam soluta nulla?</p>
                   </div>
+                  {/* Project Stack */}
                      <div className="project-stack">
                         <h3>Stacks used</h3>
                         <ul>
@@ -78,11 +84,13 @@ const Projects = () => {
                         </ul>
                      </div>
                </div>
+               {/* Live and Code Buttons */}
                <div className="project-buttons">
                   <a target="_blank" rel="external" href={liveLink}>View Live</a>
                   <a target="_blank" rel="external" href={gitHubLink}>View Code</a>
                </div>
             </div>
+            {/* Project Image */}
             <div className="project-img-area">
                <img className="project-img" src={projectImg} alt="project"/>
             </div>
