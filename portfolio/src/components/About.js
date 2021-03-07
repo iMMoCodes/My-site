@@ -2,8 +2,11 @@ import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faThumbsUp } from '@fortawesome/free-regular-svg-icons';
-import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3, faJsSquare, faNodeJs, faReact, faGitAlt, faSass } from '@fortawesome/free-brands-svg-icons';
 import { faBookReader } from '@fortawesome/free-solid-svg-icons';
+
+// #f34f29 GIT
+// #cc6699 SASS
 
 import Joke from "../helpers/Joke";
 
@@ -45,18 +48,24 @@ const About = () => {
                <div className="about-left">
                   <h2>HTML 5</h2>
                   <h2>CSS 3</h2>
+                  <h2>SASS</h2>
                   <h2>JS</h2>
+                  <h2>Git</h2>
                   <h2>React</h2>
                   <h2>Node.js</h2>
                </div>
                <div className="about-middle">
                   <h2> <FontAwesomeIcon style={{color: "#e34c26"}} icon={faHtml5}/> </h2>
                   <h2> <FontAwesomeIcon style={{color: "#264de4"}} icon={faCss3}/> </h2>
+                  <h2> <FontAwesomeIcon style={{color: "#cc6699"}} icon={faSass}/> </h2>
                   <h2> <FontAwesomeIcon style={{color: "#f0db4f"}} icon={faJsSquare}/> </h2>
+                  <h2> <FontAwesomeIcon style={{color: "#f34f29"}} icon={faGitAlt}/> </h2>
                   <h2> <FontAwesomeIcon style={{color: "#61DBFB"}} icon={faReact}/> </h2>
                   <h2> <FontAwesomeIcon style={{color: "#68A063"}} icon={faNodeJs}/> </h2>
                </div>
                <div className="about-right">
+                  <h2><FontAwesomeIcon icon={faThumbsUp}/></h2>
+                  <h2><FontAwesomeIcon icon={faThumbsUp}/></h2>
                   <h2><FontAwesomeIcon icon={faThumbsUp}/></h2>
                   <h2><FontAwesomeIcon icon={faThumbsUp}/></h2>
                   <h2><FontAwesomeIcon icon={faThumbsUp}/></h2>
