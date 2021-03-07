@@ -17,7 +17,7 @@ nav {
   }
 
   .github-icon {
-    color: linear-gradient(90deg,#3609bd,#3a2088);
+    color: linear-gradient(90deg, #3609bd, #3a2088);
     font-size: $md-size;
   }
 
@@ -43,7 +43,7 @@ nav {
 
   a {
     text-decoration: none;
-    color: $off-white
+    color: $off-white;
   }
 
   .nav-button {
@@ -69,8 +69,38 @@ nav {
       font-size: $lg-size;
       display: block;
       color: $off-purple;
-      text-shadow: 10px 10px 10px red;
       margin: auto 50px auto auto;
+      cursor: pointer;
     }
+  }
+}
+
+// Small Screen Menu
+
+.nav-button-list {
+  background: $off-black;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 8vh;
+  height: 92vh;
+  width: 100vw;
+  z-index: 900;
+  font-size: $xl-size;
+  text-shadow: $text-shadow-purple;
+
+  li {
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: $off-white;
+  }
+
+  li:hover {
+    transform: scale(1.2);
   }
 }

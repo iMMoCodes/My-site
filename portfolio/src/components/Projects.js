@@ -84,7 +84,7 @@ const Projects = () => {
                </div>
             </div>
             <div className="project-img-area">
-               <img className="project-img" src={projectImg} alt="project image"/>
+               <img className="project-img" src={projectImg} alt="project"/>
             </div>
          </section>
       </main>
