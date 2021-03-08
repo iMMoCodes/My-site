@@ -41,7 +41,7 @@ export default class MyForm extends React.Component {
                      <span className="contact-message-span">Message</span>
                   </label>
                </div>
-        {status === "SUCCESS" ? <p>Thanks! <FontAwesomeIcon icon={faSmileBeam}/></p> : <button>Send</button>}
+        {status === "SUCCESS" ? <p>Thanks, I'll get back to you! <FontAwesomeIcon icon={faSmileBeam}/></p> : <button>Send</button>}
         {status === "ERROR" && <p>Ooops! There was an error <FontAwesomeIcon icon={faFrown}/> <br/> Check that your email is valid</p>}
       </form>
     );
