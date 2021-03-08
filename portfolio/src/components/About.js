@@ -83,7 +83,7 @@ const About = () => {
                <p className="about-text">My native language is Finnish.</p>
                <p className="about-text">I love music, sports, games and challenges.</p>
                <p className="about-text">I have good communication skills and I work well by myself but also as a member of a team. In fact, one of the most rewarding experiences of my life has been being able to be a part of a four-time Finnish championship team.</p>
-               <p className="about-text">I'm really competitive person and constantly try to improve myself in everything I do. That said I'm still always friendly, positive and have a fun side.</p>
+               <p className="about-text">I'm really competitive and constantly try to improve myself in everything I do. That said I'm still always friendly and positive person.</p>
                <Joke />
             </div>
             <div className="white-line"></div>
@@ -92,7 +92,7 @@ const About = () => {
             {/* Summary */}
             <h1>Why Coding?</h1>
             <div className="summary-area">
-               <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are big reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood how code snippets affected the code so I could implement them in my own projects in the future.</p>
+               <p className="summary-text">I love challenges, problem solving and I'm always eager to learn new things and to improve. I think these are the reasons why I enjoy coding so much. I started my coding career at freeCodeCamp in August from scratch and really fell in love with it. I started from HTML and things escalated pretty quickly from there. After I understood the theory parts of language I started to write code by following youtube tutorials. I always wrote all of the code myself and made sure I understood how code affected the project so I could implement them in my own projects in the future.</p>
             </div>
             <div className="white-line"></div>
          </section>

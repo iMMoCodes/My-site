@@ -112,7 +112,8 @@ const Projects = () => {
             <h3>To view my current work project click on the buttons below</h3>
             <div className="my-current-project-buttons">
             {/* <a target="_blank" rel="noreferrer" href="https://github.com/iMMoCodes/sudoku">View Live</a> */}
-            <a target="_blank" rel="noreferrer" href="https://github.com/iMMoCodes/sudoku" >View Code</a>
+            {/* <a target="_blank" rel="noreferrer" href="https://github.com/iMMoCodes/sudoku" >View Code</a> */}
+            <p>I'm trying to make my next project a bit more of my own and advanced so need to do some studying... Coming soon!</p>
             </div>
          </div>
       </main>
