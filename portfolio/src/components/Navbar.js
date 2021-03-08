@@ -1,18 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 
 
 
 const Navbar = () => {
+   const [iconImage, setIconImage] = useState(faBars);
 
    const handleMenu = () => {
       const smallMenuList = document.getElementById("menu-button");
       if(smallMenuList.style.display === "none") {
          smallMenuList.style.display = "flex";
+         setIconImage(faTimesCircle);
       } else {
          smallMenuList.style.display = "none";
+         setIconImage(faBars);
       }
    }
 
@@ -32,7 +35,7 @@ const Navbar = () => {
             <li><a href="#contact">Contact</a></li>
          </ul>
          {/* Nav Button */}
-         <FontAwesomeIcon className="nav-button" onClick={handleMenu} icon={faBars} />
+         <FontAwesomeIcon className="nav-button" onClick={handleMenu} icon={iconImage} />
       </nav>
       <div className="nav-button-container">
          <ul className="nav-button-list" id="menu-button">

@@ -14,14 +14,14 @@
    .project-container {
       display: flex;
       width: 80%;
-      margin: 100px auto;
+      margin: 10px auto;
    }
 
    .project-text-area {
       display: flex;
       flex-direction: column;
       width: 70%;
-      padding: 50px;
+      padding: 0 30px;
 
       h2 {
          font-size: $lg-size;
@@ -75,7 +75,7 @@
       ul {
          display: flex;
          justify-content: space-around;
-         margin: 20px auto;
+         margin: 10px auto;
          font-size: $xl-size;
          text-align: center;
       }
@@ -85,7 +85,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      margin: 20px auto;
+      margin: 10px auto;
       width: 90%;
 
       a {
@@ -98,7 +98,6 @@
          font-size: $md-size;
          border-radius: 40px;
          background: linear-gradient(90deg,#3609bd,#3a2088);
-         overflow: hidden;
       }
       a:hover {
          transform: scale(1.1);
@@ -157,6 +156,7 @@
          font-size: $s-size;
       }
    }
+
    // 1180px
    @media screen and (max-width: 1180px) {
       .project-choice button {
@@ -180,6 +180,9 @@
    }
    // 1024
    @media screen and (max-width: $lg-breakpoint) {
+      .project-container {
+         width: 95%;
+      }
       .project-choice {
          width: 90%;
       }
@@ -234,6 +237,13 @@
    @media screen and (max-width: $sm-breakpoint) {
       .project-buttons {
          flex-direction: column;
+      }
+      .project-choice button {
+         font-size: 1rem;
+      }
+      .project-choice button:first-child,
+      .project-choice button:nth-child(2) {
+         padding: 12px 54.5px;
       }
       .project-buttons a:first-child {
          padding:12px 45.5px;
