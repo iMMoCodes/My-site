@@ -1,3 +1,3 @@
-# My improved portfolio created with React
+# My improved portfolio
 
-# Created by React and SASS
+# Created with React and SASS
