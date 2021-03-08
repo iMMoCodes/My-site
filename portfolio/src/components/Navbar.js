@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
@@ -21,7 +21,7 @@ const Navbar = () => {
       <nav>
          {/* Logo */}
          <div className="logo-container">
-            <a target="_blank" rel="github-link" href="https://github.com/iMMoCodes"><FontAwesomeIcon className="github-icon" icon={ faGithub }/></a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/iMMoCodes"><FontAwesomeIcon className="github-icon" icon={ faGithub }/></a>
             <h1>Github</h1>
          </div>
          {/* Nav */}

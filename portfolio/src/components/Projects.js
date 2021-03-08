@@ -98,8 +98,8 @@ const Projects = () => {
                </div>
                {/* Live and Code Buttons */}
                <div className="project-buttons">
-                  <a target="_blank" rel="external" href={liveLink}>View Live</a>
-                  <a target="_blank" rel="external" href={gitHubLink}>View Code</a>
+                  <a target="_blank" rel="noreferrer" href={liveLink}>View Live</a>
+                  <a target="_blank" rel="noreferrer" href={gitHubLink}>View Code</a>
                </div>
             </div>
             {/* Project Image */}
