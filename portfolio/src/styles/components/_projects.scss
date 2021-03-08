@@ -137,6 +137,56 @@
       }
    }
 
+   .my-current-project {
+      margin: 0 auto;
+      width: 90%;
+
+      h3 {
+         font-size: $sm-size;
+         text-align: center;
+         color: $off-grey;
+         margin: 0 auto;
+      }
+      .my-current-project-buttons {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         height: 150px;
+
+         a {
+            padding: 12px 36px;
+            background: linear-gradient(90deg,#3609bd,#3a2088);
+            border-radius: 40px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $off-white;
+            text-shadow: $text-shadow-purple;
+            font-size: $md-size;
+         }
+         a:hover {
+            transform: scale(1.1);
+         }
+      }
+      // 930 px
+      @media screen and (max-width: 930px) {
+         .my-current-project-buttons a {
+            font-size: $sm-size;
+         }
+      }
+      @media screen and (max-width: $md-breakpoint) {
+         .my-current-project-buttons {
+            flex-direction: column;
+         }
+         .my-current-project-buttons a {
+            font-size: 1.2rem;
+            margin-top: 10px;
+         }
+         .my-current-project-buttons a:first-child {
+            padding: 12px 44.8px;
+         }
+      }
+   }
+
    // Media
    // 1540px
    @media screen and (max-width: 1540px) {

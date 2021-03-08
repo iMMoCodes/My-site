@@ -107,6 +107,14 @@ const Projects = () => {
                <img className="project-img" src={projectImg} alt="project"/>
             </div>
          </section>
+         <div className="my-current-project">
+            <h1>My current project</h1>
+            <h3>To view my current work project click on the buttons below</h3>
+            <div className="my-current-project-buttons">
+            {/* <a target="_blank" rel="noreferrer" href="https://github.com/iMMoCodes/sudoku">View Live</a> */}
+            <a target="_blank" rel="noreferrer" href="https://github.com/iMMoCodes/sudoku" >View Code</a>
+            </div>
+         </div>
       </main>
    )
 }

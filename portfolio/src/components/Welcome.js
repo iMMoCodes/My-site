@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHandPointDown } from '@fortawesome/free-regular-svg-icons';
+import { faArrowAltCircleDown } from '@fortawesome/free-regular-svg-icons';
 
 const Welcome = () => {
    return (
@@ -34,7 +34,7 @@ const Welcome = () => {
                <span>e</span>
                <span>r</span>
             </div>
-            <a href="#about"><FontAwesomeIcon className="hand-icon" icon={faHandPointDown} /></a>
+            <a href="#about"><FontAwesomeIcon className="hand-icon" icon={faArrowAltCircleDown} /></a>
          </div>
       </main>
    )
