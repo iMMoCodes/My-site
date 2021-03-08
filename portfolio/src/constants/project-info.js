@@ -32,7 +32,7 @@ export const info = {
       fourth: "How to use local / session storage",
       fifth: "How to use try / catch",
       sixth: "Higher order functions",
-      seventh: "How 'this' works, (still not an expert)"
+      seventh: "How 'this' works (still not an expert)"
    },
    projectThreeLearnings: {
       first: "Basic CSS",
