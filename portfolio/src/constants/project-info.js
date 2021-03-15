@@ -23,7 +23,7 @@ export const info = {
 		second: 'How to use useState',
 		third: 'How to use useEffect',
 		fourth: 'How to fetch data from an API',
-		fifth: 'How to work with JSON',
+		fifth: 'Use of UI library',
 		sixth: 'Use of props',
 		seventh: 'Folder structure',
 	},
